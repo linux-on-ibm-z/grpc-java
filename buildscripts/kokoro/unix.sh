@@ -9,6 +9,8 @@
 #  ARCH=x86_32 ./buildscripts/kokoro/unix.sh
 # For aarch64 arch:
 #  ARCH=aarch_64 ./buildscripts/kokoro/unix.sh
+# For s390x arch:
+#  ARCH=s390_64 ./buildscripts/kokoro/unix.sh
 
 # This script assumes `set -e`. Removing it may lead to undefined behavior.
 set -exu -o pipefail

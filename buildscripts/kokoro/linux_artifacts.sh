@@ -35,3 +35,8 @@ cp -r "$LOCAL_MVN_TEMP"/* "$MVN_ARTIFACT_DIR"/
 # for aarch64 platform
 sudo apt-get install -y g++-aarch64-linux-gnu
 SKIP_TESTS=true ARCH=aarch_64 "$GRPC_JAVA_DIR"/buildscripts/kokoro/unix.sh
+
+# for s390x platform
+sudo apt-get install -y g++-s390x-linux-gnu
+SKIP_TESTS=true ARCH=s390_64 "$GRPC_JAVA_DIR"/buildscripts/kokoro/unix.sh
+
